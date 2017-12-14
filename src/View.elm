@@ -75,12 +75,7 @@ animeItem anime =
 watchedCounter : AnimeSeries -> Html Msg
 watchedCounter anime =
     h2
-        [ class "episodes-tag"
-        , css
-            [ color
-                (hex <| baseColorForEpisodesText anime)
-            ]
-        ]
+        [ class "episodes-tag" ]
         [ span [ class "watched-text" ]
             [ text (currentEpisodesText anime.watchedEpisodes) ]
         , span [ class "total-text" ]
@@ -90,16 +85,6 @@ watchedCounter anime =
 
 
 -- UTILS
-
-
-baseColorForEpisodesText : AnimeSeries -> String
-baseColorForEpisodesText anime =
-    if anime.watchedEpisodes == 0 && anime.totalEpisodes /= 0 then
-        "c53434"
-    else if anime.watchedEpisodes == anime.totalEpisodes then
-        "4fbb46"
-    else
-        "fcfcfc"
 
 
 currentEpisodesText : Int -> String

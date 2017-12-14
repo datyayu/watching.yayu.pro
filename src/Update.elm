@@ -34,7 +34,8 @@ update msg model =
 
         FetchCompleted (Ok animeList) ->
             ( { model
-                | animeList = animeList
+                | animeList =
+                    List.filter (\anime -> anime.watchedEpisodes /= 0) animeList
                 , isLoading = False
               }
             , Cmd.none

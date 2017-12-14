@@ -1,14 +1,14 @@
 {
-  "short_name": "Elm App",
-  "name": "Create Elm App Sample",
+  "short_name": "yayup_watchlist",
+  "name": "YayuP's Watching List",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "/android-icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": "https://watching.yayu.pro",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

@@ -1,0 +1,25 @@
+{
+  "name": "watching.yayu.pro",
+  "version": "1.0.0",
+  "description": "My currently watching animelist",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datyayu/watching.yayu.pro.git"
+  },
+  "author": "Arturo Coronel <aoitsu3@gmail.com> (https://datyayu.xyz)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/datyayu/watching.yayu.pro/issues"
+  },
+  "homepage": "https://github.com/datyayu/watching.yayu.pro#readme",
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  }
+}
